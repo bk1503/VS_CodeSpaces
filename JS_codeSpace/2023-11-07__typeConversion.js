@@ -48,7 +48,61 @@ let convertStrToBoolean = Boolean(AbcToBoolean)
 
 let someNum = 123
 let convertNumToStr = String(someNum)
-console.log(typeof someNum);   //* Number
-console.log(typeof convertNumToStr);  //* String
-console.log(convertNumToStr);   //* 123
+// console.log(typeof someNum);   //* Number
+// console.log(typeof convertNumToStr);  //* String
+// console.log(convertNumToStr);   //* 123
+
+// =============================================================================================
+// =============================================================================================
+//- Operations
+
+let value = 3
+let negValue = -value
+
+// console.log(negValue);
+
+// console.log(2 + 2);
+// console.log(2 - 2);
+// console.log(2 * 2);
+// console.log(2 / 2);
+// console.log(2 % 2);
+// console.log(2 ** 2);
+
+let str1 = "Bhawani"
+let str2 = "K"
+
+let str3 = str1 + str2
+console.log(str3);
+
+// ================================================================================================
+// ================================================================================================
+
+console.log("1" + 2);  //* 12
+//- => Getting 1st element as string makes JS think all the elements in it as String, Such that it performs the String Operation on it.
+
+console.log(1 + "2");   //* 12
+//- As 1st element is Number, JS performs Numeric operation on it. Next the 2nd element is String so performs the String operation and concatenates the elements.
+
+console.log("1" + 2 + 2);   //* 122
+//- => Getting 1st element as string makes JS think all the elements in it as String, Such that it performs the String Operation on it.
+
+console.log(1 + 2 + "2");   //* 32
+//- performs the numeric operation on it, then concatenates the String to it.
+
+console.log(+true); //* 1
+// console.log(true +); //* produces error
+
+console.log(+""); //* 0
+
+//! Dont write confusing code, use parenthesis to group the elements and to perform the operations on it.
+
+let counter = 100;
+++counter
+console.log(counter);   //* 101
+
+let count = 0
+count++
+console.log(count); //* 1
+
+
 
