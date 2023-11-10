@@ -66,5 +66,36 @@ typeof null                   // Returns "object"
 >> - The data type of a variable that has not been assigned a value is also undefined *
 >> * - **typeof** Operator always returns a string(containing the type of operand)
 
+<hr>
 
+### Memory
+- Stack
+    - Primitive
+    - gets the copy of a declared variable.
+    - **Where it doesn't change the original value.**
+```javascript
+let name = "_bk"
+let nickName = name
+nickName = "Raju"
 
+console.log(nickName)   // Raju
+console.log(name)   // _bk
+```
+
+- Heap
+    - Non-Primitive
+    - gets the reference of the variable, 
+    - **where it updates / changes the original value**
+
+```javascript
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "userTwo@outlook.com"
+
+console.log(userOne.email)  // userTwo@outlook.com
+console.log(userTwo.email)  // userTwo@outlook.com
+```
