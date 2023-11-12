@@ -17,11 +17,18 @@ const hundreds = 1000000
 
 // Math=======================================================================================
 
-console.log(Math);
-console.log(Math.abs(-4));  //* 4
-console.log(Math.round(4.7));   //* 5
-console.log(Math.ceil(4.2));    //* 5, 
-console.log(Math.floor(4.2));    //* 4, 
+// console.log(Math);
+// console.log(Math.abs(-4));  //* 4
+// console.log(Math.round(4.7));   //* 5
+// console.log(Math.ceil(4.2));    //* 5, 
+// console.log(Math.floor(4.2));    //* 4, 
+// console.log(Math.min(8,2,5,9,4,1)); //* 1
+// console.log(Math.max(8,2,5,9,4,1)); //* 9
+
+//* gets the random number b/w 0 & 1
+console.log(Math.random());
+console.log(Math.random()*10 + 1);
+
 
 
 
