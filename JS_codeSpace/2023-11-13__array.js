@@ -26,6 +26,9 @@ const arr2 = new Array(1, 2, 3, 4)
 
 // console.log(arr1.push("xyz"));  //* 8
 // console.log(arr1);
+// arr1.push(WCteams)
+// console.log(arr1);   //* ["123",1,2,3,4,5,true,'Abc', ["India", "Austrlia", "NZ", "SA"]]
+// console.log(arr1[8][1]); //* Australia
 
 //- pop
 //? doesn't take any args
@@ -70,8 +73,8 @@ const joinArr = arr1.join()
 
 //- slice
 //? returns the sliced section of an array, doesn't includes the upperLimit of the argument.
-//? 
-console.log(arr1.slice(1, 3));   //* [1,2]
+
+// console.log(arr1.slice(1, 3));   //* [1,2]
 
 
 //- splice
@@ -80,5 +83,39 @@ console.log(arr1.slice(1, 3));   //* [1,2]
 
 // console.log(arr1.splice(1,3));  //* [1,2,3], cutsoff the ele from an original array. This manipulates the original array.
 
-console.log(arr1);
+//- concat
+//? combines 2 or more arrays
+//? returns new Array without modifying any existing arrays.
+
+// const arr3 = WCteams.concat(arr1)
+// console.log(arr3);
+
+//- spread
+//? it takes an array and expands it to individual elements.
+//? it merges 2 or more array into one new array.
+
+// const spArr = [...arr1, ...WCteams]
+// console.log(spArr);
+
+//- Flat
+//? returns new array, by combining the array to a specific depth.
+
+// const arr = [1,2,3,[4,5,6],[[7,8],9]]
+// console.log(arr.flat(1));
+
+//- isArray
+//? generally used in web scraping, while getting the data in multiple formats.
+//? returns the boolean Value
+
+// console.log(Array.isArray("QWERTY"));  //* Checks if the given arg is an Array, returns boolean value
+// console.log(Array.from("QWERTY"));  //* the given arg Object is converted to an Array.
+
+//- Of
+//? returns new array
+let score1 = 100
+let score2 = 200
+let score3 = 300
+// console.log(Array.of(score1,score2,score3));
+
+// console.log(arr1);
 
