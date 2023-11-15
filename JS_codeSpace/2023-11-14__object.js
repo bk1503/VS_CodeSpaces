@@ -72,16 +72,16 @@ let obj2 = { 3: "c", 4: "d" }
 
 const users = [
     {
-        id:1,
-        name:"A"
+        id: 1,
+        name: "A"
     },
     {
-        id:2,
-        name:"B"
+        id: 2,
+        name: "B"
     },
     {
-        id:3,
-        name:"C"
+        id: 3,
+        name: "C"
     }
 ]
 
@@ -90,4 +90,27 @@ console.log(Object.keys(users));    //* returns all the keys of an object wraped
 console.log(Object.values(users));  //* returns all the values of an object wraped in []
 console.log(Object.entries(users)); //* returns the array of array of all the entries of the object
 
+// ===============================================================================================
+// ===============================================================================================
 
+// NOTE : Destructuring, which helps to unpack the values from array/Object into individual variables.
+//. This destructurizes by copying items into variables, but the array doesn't get modified.
+
+
+const obj = { a: 1, b: 2 };
+const { a, b } = obj;
+// is equivalent to:
+// const a = obj.a;
+// const b = obj.b;
+
+// -------------------------------------------------------
+
+// we have an array with the name and surname
+let arr = ["John", "Smith"]
+
+// destructuring assignment
+// sets firstName = arr[0]
+// and surname = arr[1]
+let [firstName, surname] = arr;
+alert(firstName); // John
+alert(surname);  // Smith
